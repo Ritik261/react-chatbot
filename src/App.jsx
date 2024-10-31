@@ -13,7 +13,7 @@ function App() {
     setAns("loading")
     setLoading(true);
     const response = await axios({
-      url:"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDlYFh8eA3zpCvZZ8Hy-DIhPIH3Q67KOeI",
+      url: import.meta.env.VITE_OPENAI_KEY,
       method:"post",
       data:{
         contents:[
